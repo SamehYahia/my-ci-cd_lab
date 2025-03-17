@@ -1,1 +1,1 @@
-# itOps-CI-CD-with-GitHub-Actions-and-ArgoCD
+# GitOps-CI-CD-with-GitHub-Actions-and-ArgoCD
