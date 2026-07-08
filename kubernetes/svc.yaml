@@ -9,4 +9,4 @@ spec:
     - protocol: TCP
       port: 80        # البورت اللي الخدمة بتسمع عليه
       targetPort: 8080 # البورت اللي الأبلكيشن بتاعك شغال عليه جوه الـ Container
-  type: NodePort      # عشان تقدر تدخل من الـ Browser بتاع الـ Linux Mint بتاعك
+  type: LoadBalancer     # عشان تقدر تدخل من الـ Browser بتاع الـ Linux Mint بتاعك
