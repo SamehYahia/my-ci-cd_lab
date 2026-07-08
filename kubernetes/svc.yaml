@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: my-app-service
 spec:
-  type: LoadBalancer
   selector:
-    app: my-app
+    app: my-app # لازم الاسم ده يطابق الـ labels اللي في الـ Pods بتاعتك
   ports:
-  - protocol: TCP
-    port: 80        # Exposes on port 80
-    targetPort: 3000  # Maps to the app's port 3000
+    - protocol: TCP
+      port: 80        # البورت اللي الخدمة بتسمع عليه
+      targetPort: 8080 # البورت اللي الأبلكيشن بتاعك شغال عليه جوه الـ Container
+  type: NodePort      # عشان تقدر تدخل من الـ Browser بتاع الـ Linux Mint بتاعك
