@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: sameh24/myapp1
+        image: samehyahia/myapp1
         ports:
         - containerPort: 3000
         imagePullPolicy: Always
